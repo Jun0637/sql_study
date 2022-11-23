@@ -102,8 +102,8 @@ create table members
     usrname varchar2(30) constraint members_usrname_nn unique not null,
     birth date,
     joindate date default sysdate,
-    gender varchar2(1) constraint members_gender_ck check(gende in('m','f'))
-);
+    gender varchar2(1) constraint members_gender_ck check(gender in('m','f'))
+    );
 
 insert into members
 values
